@@ -1,0 +1,11 @@
+project_id = "the-tuesday-table"
+
+[db]
+major_version = 15
+
+[db.seed]
+enabled = false
+
+[auth]
+site_url = "http://localhost:3000"
+enable_signup = false

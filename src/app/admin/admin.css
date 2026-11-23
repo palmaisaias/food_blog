@@ -1,0 +1,77 @@
+.admin-header { display: flex; align-items: center; justify-content: space-between; gap: .6rem; border-bottom: 1px solid var(--rule); min-height: 77px; }
+.admin-header > span { font-size: .85rem; color: var(--muted); font-weight: 700; }
+.admin-main { max-width: 1150px; padding-block: clamp(1.7rem, 4vw, 3.4rem) 4rem; }
+.admin-title { display: flex; align-items: end; justify-content: space-between; gap: .75rem; margin-bottom: 1.6rem; }
+.admin-title h1, .admin-login h1 { margin: .4rem 0 0; font-size: clamp(2.8rem, 6vw, 5.8rem); overflow-wrap: anywhere; }
+.admin-actions { display: flex; flex-wrap: wrap; gap: .6rem; align-items: center; }
+.admin-login { max-width: 460px; margin: 0 auto; padding-block: 1.35rem 2rem; }
+.admin-login h1 { margin-bottom: 1.25rem; }
+.admin-login-form { display: grid; gap: 1rem; margin-bottom: 1rem; }
+.admin-main label { display: grid; gap: .35rem; color: var(--muted); font-size: .875rem; font-weight: 750; }
+.admin-main :is(input:not([type="file"]), select, textarea) { border: 1px solid #cdbc9f; color: var(--ink); font-weight: 500; border-radius: 0; background: #fffcf5; padding: .6rem .65rem; min-height: 45px; width: 100%; font-size: 1rem; }
+.admin-main select { padding-right: 1.25rem; }
+.admin-main input:read-only { background: var(--paper-deep); }
+.admin-main textarea { resize: vertical; }
+.admin-notice, .form-error { margin-block: .45rem .8rem; padding: .65rem .8rem; border-left: 2px solid var(--olive); background: #eeebdd; color: var(--olive); }
+.form-error { border-color: var(--red); background: #f5e1d6; color: var(--red-dark); }
+ul.form-error { list-style: disc; padding-left: 1.8rem; }
+.admin-counts { display: flex; flex-wrap: wrap; padding: .8rem 0; gap: .4rem 1.6rem; margin: .8rem 0 1rem; border-block: 1px solid var(--rule); text-transform: capitalize; }
+.admin-counts strong { color: var(--red); }
+.admin-list > li { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, .6fr) auto; gap: .65rem 1.4rem; align-items: center; border-bottom: 1px solid var(--rule); padding: .8rem 0; }
+.admin-list .eyebrow { color: var(--muted); }
+.admin-recipe-link { font: 600 clamp(1.35rem, 2.5vw, 2rem)/1.12 var(--serif); }
+.admin-recipe-link:hover { color: var(--red); }
+.admin-list-meta { display: flex; flex-direction: column; align-items: start; gap: .25rem; color: var(--muted); font-size: .85rem; }
+.badge { display: inline-block; padding: .16rem .45rem; background: var(--paper-deep); font-weight: 750; text-transform: capitalize; }
+.badge-published { background: #e3e8d7; color: #313b28; }
+.badge-scheduled { background: var(--butter); color: #594116; }
+.editor-title { margin-top: .8rem; }
+.editor-title h1 { font-size: clamp(2.55rem, 5.1vw, 4.6rem); }
+.editor-nav { display: flex; flex-wrap: wrap; margin-bottom: 1rem; border-block: 1px solid var(--rule); }
+.editor-nav button { padding: .58rem .85rem; min-height: 46px; font-size: .94rem; font-weight: 750; border-bottom: 2px solid transparent; }
+.editor-nav button:hover, .editor-nav button[aria-current] { color: var(--red); border-color: var(--red); }
+.editor-panel { margin-bottom: 1rem; padding: clamp(.9rem, 2.5vw, 1.6rem); background: #f5eee2; border: 1px solid var(--rule); }
+.editor-panel[hidden] { display: none; }
+.editor-panel h2 { font-size: clamp(1.9rem, 3.2vw, 2.7rem); margin-bottom: .85rem; }
+.editor-panel > p { color: var(--muted); margin: 0 0 .5rem; }
+.form-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .75rem; }
+.form-grid .full-width { grid-column: 1 / -1; }
+.numbers-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.ingredient-fields { grid-template-columns: minmax(0, .45fr) minmax(0, .55fr) minmax(0, 1fr) minmax(0, 1fr); }
+.editor-row { border-top: 1px solid var(--rule); margin-top: .7rem; padding: .9rem 0 .35rem; display: grid; gap: .65rem; }
+.editor-row h3 { font-size: 1.52rem; }
+.editor-row-title { display: flex; justify-content: space-between; align-items: center; gap: .55rem; }
+.add-button, .method-notes { margin-top: .9rem; }
+.photo-editor { margin-top: .75rem; }
+.photo-label { color: var(--muted); font-size: .88rem; font-weight: 750; margin-bottom: .3rem; }
+.photo-drop { display: flex; align-items: center; justify-content: center; gap: .6rem; text-align: center; color: var(--muted); padding: .7rem; min-height: 82px; border: 1px dashed #a69273; }
+.photo-drop.is-dragging { background: var(--butter); border-color: var(--red); }
+.photo-drop svg { color: var(--red); flex: 0 0 auto; }
+.photo-drop p { margin-top: -.35rem; font-size: .81rem; }
+.admin-photos { display: grid; gap: .55rem; margin-top: .65rem; }
+.admin-photos > li { display: grid; align-items: start; grid-template-columns: auto minmax(0, 1fr) auto; gap: .65rem; padding: .6rem; border: 1px solid var(--rule); }
+.admin-photos img { width: 135px; height: 106px; object-fit: cover; background: var(--paper-deep); }
+.admin-photo-fields { display: grid; gap: .35rem; }
+.photo-buttons { display: flex; flex-wrap: wrap; gap: .2rem; }
+.photo-buttons .icon-button { width: 42px; min-height: 42px; }
+.editor-result:empty { display: none; }
+.editor-result:focus { outline: none; }
+.publish-panel { background: #eee8d8; }
+.publish-panel > .form-grid { margin-bottom: .6rem; }
+.publish-panel > .admin-actions { margin-top: .85rem; }
+.delete-link { margin-left: .45rem; }
+.delete-dialog h2 { font-size: 2.2rem; margin: .5rem 2.25rem .6rem 0; }
+.delete-dialog p { margin-bottom: 1rem; }
+@media (max-width: 620px) {
+  .admin-title { flex-direction: column; align-items: start; }
+  .admin-list > li { grid-template-columns: minmax(0, 1fr) auto; }
+  .admin-list .admin-actions { grid-column: 1 / -1; }
+  .ingredient-fields { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .admin-photos > li { grid-template-columns: minmax(48px, 85px) minmax(0, 1fr); }
+  .admin-photos img { width: 85px; height: 78px; }
+  .admin-photos .photo-buttons { grid-column: 2; }
+}
+@media (max-width: 375px) {
+  .admin-main .numbers-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .editor-nav button { padding-inline: .55rem; }
+}
