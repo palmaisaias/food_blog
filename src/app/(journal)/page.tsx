@@ -10,7 +10,7 @@ export default async function Home() {
   if (!recipe) return <section className="page-wrap empty-home">
     <p className="eyebrow section-kicker"><span /> The Tuesday Table</p>
     <h1>Pull up a <em>chair.</em></h1>
-    <p>One recipe. Three kitchens. Every week. The first Tuesday recipe is still in the works.</p>
+    <p>Three adults attempting to feed themselves. The first Tuesday recipe is still in the works.</p>
     <Link className="button button-red" href="/about">Meet the cooks</Link>
   </section>;
   return <RecipeSpread recipe={recipe} featured sample={!hasSupabase} />;

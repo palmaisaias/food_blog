@@ -15,7 +15,7 @@ export default async function Archive() {
     <header className="editorial-heading">
       <p className="eyebrow section-kicker"><span /> The collection</p>
       <h1>Recipe <em>Archive.</em></h1>
-      <p>A growing record of dinners, discoveries, and what happened in each of our kitchens.</p>
+      <p>A documented history of questionable culinary decisions.</p>
       {!hasSupabase && <SampleNotice />}
     </header>
     <ArchiveList recipes={recipes} />

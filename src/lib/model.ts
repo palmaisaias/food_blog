@@ -8,8 +8,8 @@ export type Status = typeof statuses[number];
 
 export const kitchens = [
   { id: "owner", name: "Isaías", initials: "IP", bio: "Chooses Tuesday’s recipe and is usually looking for an excuse to spend a little more time in the kitchen." },
-  { id: "daniel", name: "Daniel", initials: "D", bio: "A newer cook, learning a recipe at a time from his own side of the table." },
-  { id: "jacky", name: "Jacky", initials: "J", bio: "A newer cook too. Every Tuesday brings another reason to give something unfamiliar a go." },
+  { id: "daniel", name: "Daniel", initials: "D", bio: "A newer cook, learning a recipe at a time from his own perspective and within his timeframe." },
+  { id: "jacky", name: "Jacky", initials: "J", bio: "A newer cook too. Will probably be cooking from her car" },
 ] as const;
 
 export type KitchenId = typeof kitchens[number]["id"];

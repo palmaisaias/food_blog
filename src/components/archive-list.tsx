@@ -33,7 +33,7 @@ export function ArchiveList({ recipes }: { recipes: RecipeSummary[] }) {
     && (!category || recipe.category === category));
   const results = sort === "oldest" ? matches.toReversed() : matches;
 
-  if (!recipes.length) return <p className="archive-empty">The first recipe will appear here after publication.</p>;
+  if (!recipes.length) return <p className="archive-empty">The first recipe will appear here after we start...probs next week.</p>;
 
   return <>
     <form className="archive-filters" role="search" onSubmit={(event) => event.preventDefault()}>

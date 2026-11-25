@@ -14,7 +14,16 @@ export default function About() {
       <div className="editorial-heading">
         <p className="eyebrow section-kicker"><span /> About the table</p>
         <h1>Three friends.<br /><em>One Tuesday.</em></h1>
-        <p>Isaías picks a recipe on Tuesday. Then he, Daniel, and Jacky each make it in their own kitchen sometime that week.</p>
+        <p style={{
+          fontSize: '0.85rem',
+          fontStyle: 'italic',
+          textAlign: 'center',
+          color: '#000',
+          marginTop: '8px'
+        }}>
+          dramatic... I know.
+        </p>
+        <p>Isaías picks a recipe on Tuesday...hopefully. Then he, Daniel, and Jacky each make it in their own kitchen sometime that week.</p>
         <p>After dinner, we compare notes and put the photos here. We might make the same recipe three different ways. That’s usually the part worth writing down.</p>
       </div>
       <figure><div className="about-image"><FoodPhoto photo={{ path: "/images/table-still-life.webp", alt: "A cutting board with lemons and rosemary on a red-striped kitchen tablecloth", caption: "" }} priority sizes="(max-width: 780px) 92vw, 560px" /></div></figure>
